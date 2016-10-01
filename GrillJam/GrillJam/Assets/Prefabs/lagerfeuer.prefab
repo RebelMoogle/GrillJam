@@ -22,7 +22,7 @@ GameObject:
   - 212: {fileID: 212000010043522634}
   - 61: {fileID: 61000013935583826}
   - 114: {fileID: 114000013884578086}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: lagerfeuer
   m_TagString: Untagged
   m_Icon: {fileID: 0}

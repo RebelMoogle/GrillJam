@@ -22,9 +22,9 @@ GameObject:
   - 212: {fileID: 212000012369219576}
   - 61: {fileID: 61000010818134886}
   - 114: {fileID: 114000013504487034}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Tile_Lava
-  m_TagString: Untagged
+  m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

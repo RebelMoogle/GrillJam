@@ -22,9 +22,9 @@ GameObject:
   - 212: {fileID: 212000010759951708}
   - 61: {fileID: 61000012123956226}
   - 114: {fileID: 114000013523351072}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: fridge
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

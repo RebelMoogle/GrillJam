@@ -22,7 +22,7 @@ GameObject:
   - 212: {fileID: 212000011649661192}
   - 114: {fileID: 114000012475011352}
   - 60: {fileID: 60000011946057390}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
