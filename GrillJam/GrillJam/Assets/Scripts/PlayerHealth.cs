@@ -60,7 +60,8 @@ public class PlayerHealth : MonoBehaviour
         {
             isDying = true;
             // ... disable user Player Control script
-            GetComponent<PlayerControl>().enabled = false;
+            if (gameObject.tag == "Player")
+                GetComponent<PlayerControl>().enabled = false;
 
             // ... Trigger the 'Die' animation state
             // TODO: play different depeding on ice or heat death
