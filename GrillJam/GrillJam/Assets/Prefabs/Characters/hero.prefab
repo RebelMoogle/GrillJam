@@ -142,7 +142,6 @@ GameObject:
   - 58: {fileID: 5800000}
   - 95: {fileID: 9500000}
   - 114: {fileID: 11400004}
-  - 114: {fileID: 11400006}
   - 82: {fileID: 8200004}
   m_Layer: 9
   m_Name: hero
@@ -493,7 +492,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -515,7 +514,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!82 &8200002
 AudioSource:
   m_ObjectHideFlags: 1
@@ -641,7 +640,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -663,7 +662,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!95 &9500000
 Animator:
   serializedVersion: 3
@@ -736,7 +735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52121b47a452546fb88cf2e9a9352f56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  Temperature: 0
   repeatDamagePeriod: 0.35
   ouchClips:
   - {fileID: 8300000, guid: 16883b69910904c908f8738ee6d16a7f, type: 3}
@@ -744,22 +743,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c6cea8437a02b40b78dfaf913b99be0d, type: 3}
   - {fileID: 8300000, guid: 4baef03e1cc8f4ab69708f3aedbce21c, type: 3}
   hurtForce: 100
-  damageAmount: 10
---- !u!114 &11400006
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2a401b7e00ae4e6f8558aec39e60721, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bombLaid: 0
-  bombCount: 0
-  bombsAway: {fileID: 8300000, guid: 2d487c0108565443ba2dea29b521e120, type: 3}
-  bomb: {fileID: 100000, guid: 9f1c955688b614b259cf703b0b1c73d2, type: 2}
+  environmentTemperature: -0.1
+  TimeToNormal: 2
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

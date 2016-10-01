@@ -25,9 +25,6 @@ public class BombPickup : MonoBehaviour
 			// ... play the pickup sound effect.
 			AudioSource.PlayClipAtPoint(pickupClip, transform.position);
 
-			// Increase the number of bombs the player has.
-			other.GetComponent<LayBombs>().bombCount++;
-
 			// Destroy the crate.
 			Destroy(transform.root.gameObject);
 		}
