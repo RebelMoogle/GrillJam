@@ -22,7 +22,7 @@ GameObject:
   - 212: {fileID: 212000010759951708}
   - 61: {fileID: 61000012123956226}
   - 114: {fileID: 114000013523351072}
-  m_Layer: 10
+  m_Layer: 12
   m_Name: fridge
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000014014254236}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.49, y: -5.39, z: 0}
+  m_LocalPosition: {x: 9.64, y: -5.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []

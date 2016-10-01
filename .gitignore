@@ -31,3 +31,5 @@ sysinfo.txt
 GrillJam/GrillJam/Temp/
 GrillJam/GrillJam/Library/ShaderCache/
 *.log
+ArtAssets/Music/sausage_mx_intro.wav
+ArtAssets/Music/sausage_mx_loop.wav
