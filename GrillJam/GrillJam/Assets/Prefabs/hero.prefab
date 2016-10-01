@@ -20,7 +20,22 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012173217678}
   m_Layer: 9
-  m_Name: groundCheck
+  m_Name: leftWall
+  m_TagString: Untagged
+  m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1000011114589758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000011790286122}
+  m_Layer: 9
+  m_Name: rightWall
   m_TagString: Untagged
   m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -49,6 +64,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1000012736375760
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000012171351072}
+  m_Layer: 9
+  m_Name: groundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &4000010972177092
 Transform:
   m_ObjectHideFlags: 1
@@ -60,8 +90,36 @@ Transform:
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 4000012171351072}
+  - {fileID: 4000011790286122}
   - {fileID: 4000012173217678}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &4000011790286122
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011114589758}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1, y: -0.99, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000010972177092}
+  m_RootOrder: 1
+--- !u!4 &4000012171351072
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000012736375760}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.11, y: -1.68, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 4000010972177092}
   m_RootOrder: 0
 --- !u!4 &4000012173217678
 Transform:
@@ -69,13 +127,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010147386024}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.9890461, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.29, y: -1.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 4000010972177092}
-  m_RootOrder: 0
+  m_RootOrder: 2
 --- !u!50 &50000010655171096
 Rigidbody2D:
   serializedVersion: 2
@@ -104,9 +162,9 @@ CircleCollider2D:
   m_Material: {fileID: 6200000, guid: 24ac79603fb61400588e37d9f6fe952a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: -0.45}
+  m_Offset: {x: 0, y: -0.8}
   serializedVersion: 2
-  m_Radius: 0.37
+  m_Radius: 0.6
 --- !u!61 &61000010884386232
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -120,7 +178,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.61, y: 1.17}
+  m_Size: {x: 1, y: 2}
 --- !u!82 &82000011350494686
 AudioSource:
   m_ObjectHideFlags: 1
@@ -228,9 +286,7 @@ MonoBehaviour:
   moveForce: 365
   maxSpeed: 8
   jumpClips:
-  - {fileID: 8300000, guid: 50a8d8a939a0f4e77a0dac6ecd2e582b, type: 3}
-  - {fileID: 8300000, guid: fc55d077383484ac0ad66aa17fcd746f, type: 3}
-  - {fileID: 8300000, guid: dafa1cc4eb8714341a7c595abfba35d8, type: 3}
+  - {fileID: 8300000, guid: 10719cc715465914fb06a47420a883c7, type: 3}
   jumpForce: 1000
   taunts:
   - {fileID: 8300000, guid: 27cbebf9d650249e5b032494eae5322c, type: 3}
@@ -254,13 +310,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52121b47a452546fb88cf2e9a9352f56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highDeathTemp: 1
+  lowDeathTemp: -1
   Temperature: 0
   repeatDamagePeriod: 0.35
-  ouchClips:
-  - {fileID: 8300000, guid: 16883b69910904c908f8738ee6d16a7f, type: 3}
-  - {fileID: 8300000, guid: 4825e9268b7c84159b1f2b9cb54850b1, type: 3}
-  - {fileID: 8300000, guid: c6cea8437a02b40b78dfaf913b99be0d, type: 3}
-  - {fileID: 8300000, guid: 4baef03e1cc8f4ab69708f3aedbce21c, type: 3}
+  heatClips:
+  - {fileID: 8300000, guid: b4642efeb2f06a34d887eb8c5046e829, type: 3}
+  - {fileID: 8300000, guid: b2e06e01cdcd5a643887236e53f65032, type: 3}
+  - {fileID: 8300000, guid: abf3a0c8aba007f418060d1cf4b118a5, type: 3}
+  - {fileID: 8300000, guid: 1b261996b9497fa4fbf280c9ebe0c710, type: 3}
+  - {fileID: 8300000, guid: 12926e6f7981e264b816fce1743b72a1, type: 3}
+  iceClips:
+  - {fileID: 8300000, guid: 15c02c08d7d15cb40a23c0abcd32c85f, type: 3}
+  - {fileID: 8300000, guid: 583f05fbd0231b74b952415238c5fe4f, type: 3}
+  - {fileID: 8300000, guid: 33a43f26bc333c24b9fb2fc3ed0f4853, type: 3}
   hurtForce: 100
   targetTemperature: 0
   TimeToNormal: 2
